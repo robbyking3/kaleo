@@ -1,0 +1,23 @@
+<section class="section">
+	<div class="container">
+		<div class="columns">
+		{% for post in site.posts %}
+		<div class="column">
+		<div class="card">
+		  <div class="card-content">
+	        <p class="title is-3">{{ post.title }}</p>
+		    <div class="content">
+		      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
+		      <hr>
+		      <a class="block is-fullwidth button is-primary is-outline" href="{{ post.url | prepend: site.baseurl }}">Read {{ post.title }}</a>
+
+		      <br>
+		        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+		    </div>
+		  </div>
+		</div>
+		</div>
+		{% endfor %}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,39 @@
+
+<section class="hero is-info is-large site-header">
+  <div class="hero-head">
+    <nav class="nav is-info is-large">
+      <div class="container">
+        <div class="nav-left">
+          <a class="nav-item is-brand title is-2" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </div>
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <div class="nav-right nav-menu">
+          {% for my_page in site.pages %}
+              <a class="nav-item is-tab" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-4">
+          <h1 class="title">
+            Kaleo
+          </h1>
+          <h2 class="subtitle">
+            {{ site.description }}
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
