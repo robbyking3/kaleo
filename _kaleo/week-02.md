@@ -1,7 +1,7 @@
 ---
-layout: post
+layout: page
 title:  "Kaleo Week 2"
-date:   2016-12-03 00:00:00
+date:   2016-10-04 00:00:00
 categories: kaleo
 ---
 

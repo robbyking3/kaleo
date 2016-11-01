@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Kaleo Week 1"
 date:   2016-10-03 00:00:00
 categories: kaleo
